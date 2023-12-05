@@ -1,0 +1,4 @@
+../Core/Src/z_i2c_eeprom.c:11:6:test_EEPROM	128	static,ignoring_inline_asm
+../Core/Src/z_i2c_eeprom.c:82:10:write_s_EEPROM	48	static
+../Core/Src/z_i2c_eeprom.c:105:11:write_ns_EEPROM	48	static
+../Core/Src/z_i2c_eeprom.c:125:11:read_p_EEPROM	48	static
