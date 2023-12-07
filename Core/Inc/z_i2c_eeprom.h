@@ -34,5 +34,8 @@
 #define I2C_COMM_TIMEOUT  10	// timeout for I2C communication
 
 void test_EEPROM ();
+uint8_t write_s_EEPROM(uint16_t addr, char* data);
+uint8_t write_ns_EEPROM(uint16_t addr, char* data,uint8_t size);
+uint8_t read_p_EEPROM(uint16_t addr, char* data);
 
 #endif /* INC_Z_I2C_EEPROM_H_ */

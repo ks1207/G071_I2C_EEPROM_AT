@@ -73,7 +73,9 @@ static void MX_TIM7_Init(void);
 int main(void)
 {
   /* USER CODE BEGIN 1 */
-
+	uint16_t addrEEP;
+	char* dataEEP="Dobrý den";
+	uint8_t result_W;
   /* USER CODE END 1 */
 
   /* MCU Configuration--------------------------------------------------------*/
@@ -99,7 +101,9 @@ int main(void)
   MX_TIM7_Init();
   /* USER CODE BEGIN 2 */
   HAL_TIM_Base_Start(&htim7);
-  test_EEPROM();
+  //test_EEPROM();
+  addrEEP=0x03;
+  result_W=write_s_EEPROM(addrEEP, dataEEP);
   /* USER CODE END 2 */
 
   /* Infinite loop */
