@@ -75,7 +75,9 @@ int main(void)
   /* USER CODE BEGIN 1 */
 	uint16_t addrEEP;
 	char* dataEEP="Dobrý den";
+	char dataEPP_R[EE_PAGE_LEN];
 	uint8_t result_W;
+	uint8_t result_R;
   /* USER CODE END 1 */
 
   /* MCU Configuration--------------------------------------------------------*/
@@ -104,6 +106,9 @@ int main(void)
   //test_EEPROM();
   addrEEP=0x03;
   result_W=write_s_EEPROM(addrEEP, dataEEP);
+  //HAL_Delay(1000);
+  addrEEP=0x03;
+  result_R=read_p_EEPROM(addrEEP, dataEPP_R);
   /* USER CODE END 2 */
 
   /* Infinite loop */
