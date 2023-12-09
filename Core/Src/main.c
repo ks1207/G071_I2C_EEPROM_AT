@@ -13,6 +13,7 @@
   * in the root directory of this software component.
   * If no LICENSE file comes with this software, it is provided AS-IS.
   * update 6.12.2023
+  * Update 8.12z.2023 added main.c about writing and reading  to EEPROM
   *
   ******************************************************************************
   */
@@ -78,6 +79,7 @@ int main(void)
 	char dataEPP_R[EE_PAGE_LEN];
 	uint8_t result_W;
 	uint8_t result_R;
+	uint8_t time1=0;
   /* USER CODE END 1 */
 
   /* MCU Configuration--------------------------------------------------------*/
