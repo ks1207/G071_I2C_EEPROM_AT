@@ -79,7 +79,7 @@ int main(void)
 	char dataEPP_R[EE_PAGE_LEN];
 	uint8_t result_W;
 	uint8_t result_R;
-	uint8_t time1=0;
+
   /* USER CODE END 1 */
 
   /* MCU Configuration--------------------------------------------------------*/
